@@ -1,0 +1,311 @@
+/*estilos*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*media queries*/
+@media (min-width: 768px) {
+  /*boton sobre nosotros*/
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+.button-container a {
+  box-shadow: 10px 5px 5px rgb(38, 36, 49);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  bottom: 800px;
+  left: 45em;
+  background-color: #2e429b;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}
+
+}
+
+
+@media (max-width:320px){
+  
+}
+
+@media (orientation: landscape) {
+ 
+}
+
+/*animaciones*/
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecercostado {
+  from {
+    margin-left: 10%;
+    width: 10%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 10%;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: -75px;
+  color: white;
+  -webkit-text-stroke: 3px #2e429b;
+  text-shadow: rgb(38, 36, 49) 0 9px;
+}
+
+h1.produ {
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+h1.comoComprar {
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  text-align: center;
+
+  color: white;
+  -webkit-text-stroke: 3px #2e429b;
+}
+
+nav {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  margin-top: 50px;
+}
+
+/*Barra buscadora*/
+.field {
+  box-shadow: 10px 5px 5px rgb(38, 36, 49);
+  display: flex;
+  position: realtive;
+  margin: 0.5em auto;
+  width: 30%;
+  flex-direction: row;
+  box-shadow: 1px 1px 0 rgb(77, 95, 171), 2px 2px 0 rgb(77, 95, 171),
+    3px 3px 0 rgb(77, 95, 171),
+    4px 4px 0 rgb(77, 95, 171) 5px 5px 0 rgb(77, 95, 171) 6px 6px 0
+      rgb(77, 95, 171) 7px 7px 0 rgb(77, 95, 171);
+}
+
+.field > input[type="text"],
+.field > button {
+  display: block;
+  font: 1.2em apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.field > input[type="text"] {
+  flex: 1;
+  padding: 0.6em;
+  border: 0.2em solid rgb(77, 95, 171);
+}
+
+.field > button {
+  padding: 0.6em 0.8em;
+  background-color: rgb(77, 95, 171);
+  color: white;
+  border: none;
+}
+
+.field {
+  text-align: center;
+}
+
+/*boton sobre nosotros*/
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+.button-container a {
+  box-shadow: 10px 5px 5px rgb(38, 36, 49);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  bottom: 800px;
+  left: 45em;
+  background-color: #2e429b;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}
+
+/*Menu productos*/
+
+.contenedor {
+  height: 100%;
+  padding: 20px;
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+  grid-auto-flow: dense;
+}
+.contenedor div {
+  font-family: Nunito;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fdfdfd;
+  background-color: #ac8e56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.contenedor div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.horizontal {
+  grid-column: auto / span 2;
+}
+.vertical {
+  grid-row: auto / span 5;
+}
+.grande {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.pruebagrid {
+  display: grid;
+  grid-template-rows: 8px;
+}
+
+.botoninfo {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  box-shadow: 10px 5px 5px rgb(38, 36, 49);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+
+  background-color: #2e429b;
+  border-radius: 1.7em;
+  border-color: #fff;
+  color: white;
+
+  padding: 2em 1.8em;
+  width: 15em;
+}
+
+/*imagenes algunos productos*/
+
+.imagenesProductos {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: 0px; /* ajustar los valores para mover la imagen */
+  right: -500px;
+  width: 158px;
+  height: 170px;
+  animation-duration: 3s;
+  animation-name: aparecercostado;
+
+  margin-bottom: 2%;
+  margin-top: -1%;
+  margin-right: 2%;
+  bottom: 8%;
+
+  border: 2px solid #fff;
+}
+
+/*Formulario Contaco*/
+.formularioContacto {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: auto;
+  width: 50%;
+  border: 2px solid #2e429b;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/*sobre nosotros*/
+.nuestraMision {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: left;
+  text-indent: 50px;
+  color: white;
+  -webkit-text-stroke: 3px #2e429b;
+}
+
+.grid {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: #2e429b;
+  display: grid;
+  grid-template-areas: 300px 100px;
+  grid-template-rows: 50px 100px;
+  background: linear-gradient(to bottom, whitesmoke, white);
+}
+
+.mision {
+  grid-template-areas: aside;
+  grid-area: aside;
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: rgb(30, 77, 116);
+  justify-content: space-between;
+  width: 800px;
+  height: 500px;
+}
+
+/*PRODUCTOS*/
+section.gridA {
+  background-color: #2e429b;
+  width: 100%;
+}
+
+section div {
+  background-color: whitesmoke;
+  margin: 5px;
+}
+
+section.gridB {
+  display: grid;
+  background: linear-gradient(to bottom, #2e429b, white);
+  grid-template-columns: 300px 80%;
+  grid-template-rows: 300px 50vh;
+}
